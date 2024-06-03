@@ -6,8 +6,8 @@ import FAMID from '../assets/research/IFIP_2023__False_Alarms_Mitigation_in_IoMT
 function Research() {
     return (
         <div id='research' className='bg-gray-100 py-20'>
-            <div className='max-w-4xl mx-auto px-6'>
-                <h1 className='text-4xl font-medium mb-8 font-mono'>RESEARCH</h1>
+            <div className='flex flex-col max-w-5xl mx-auto px-6'>
+                <h1 className='mb-6 text-3xl font-medium font-mono md:text-4xl'>RESEARCH</h1>
                 <div className='mb-8'>
                     <h2 className='text-lg font-medium'>Modular Security Evaluation Platform for Physiological Closed-Loop Control Systems</h2>
                     <p className='italic text-gray-600'>Samir Ahmed, Shakil Mahmud, Robert Karam</p>
