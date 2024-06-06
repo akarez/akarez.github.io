@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        mono: ['Fira Code', 'monospace'] // Add the mono font family
+        sans: ['Inter', 'sans-serif'],
+        mono: ['Fira Code', 'monospace']
       }
     },
   },
