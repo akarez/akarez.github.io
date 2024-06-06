@@ -15,12 +15,12 @@ function NavBar() {
         <>
             <div className={`fixed w-full md:h-28 h-20 bg-gray-100 md:p-12 p-4 flex justify-between items-center z-50 transition-all duration-300 ${isMobileMenuOpen ? 'backdrop-blur' : ''}`}>
                 <div className="relative z-50">
-                    <Link to='home' smooth={true} duration={500} hashSpy={true} className='h-12 md:h-10 md:text-5xl text-4xl font-mono cursor-pointer'>
+                    <Link to='home' smooth={true} duration={500} hashSpy={true} className='h-12 md:h-10 md:text-4xl text-3xl font-mono cursor-pointer'>
                         S/A
                     </Link>
                 </div>
                 <div className='block md:hidden relative z-50'>
-                    <button onClick={toggleMobileMenu} className="text-3xl">
+                    <button onClick={toggleMobileMenu} className="text-2xl">
                         <RiMenu3Fill />
                     </button>
                 </div>
@@ -66,7 +66,7 @@ function NavBar() {
             </div>
             {/* mobile menu */}
             <div className={`fixed top-0 right-0 h-full w-full bg-gray-100 p-8 transition-transform duration-500 transform ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden z-50`}>
-                <button onClick={toggleMobileMenu} className="text-3xl absolute top-6 right-4">
+                <button onClick={toggleMobileMenu} className="text-2xl absolute top-6 right-4">
                     <RiCloseLine />
                 </button>
                 <ul className='flex flex-col items-start mt-12'>
