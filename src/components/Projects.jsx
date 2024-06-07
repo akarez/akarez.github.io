@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import Cyclone from '../assets/projects/cyclone.png';
-import Bumblebee from '../assets/projects/bumblebee.png';
-import CycloneSide from '../assets/projects/cyclone-side.png';
-import BumblebeeSide from '../assets/projects/bumblebee-side.png';
+import Cyclone from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/cyclone.png';
+import Bumblebee from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/bumblebee.png';
+import CycloneSide from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/cyclone-side.png';
+import BumblebeeSide from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/bumblebee-side.png';
 import { useMediaQuery } from 'react-responsive';
 
 const projects = [

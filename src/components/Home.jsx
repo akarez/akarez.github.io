@@ -1,6 +1,6 @@
 import React from 'react';
-import Profile from '../assets/samirahmed-pfp.png';
-import Resume from '../assets/samirahmed-resume.pdf';
+import Profile from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/samirahmed-pfp.png';
+import Resume from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/samirahmed-resume.pdf';
 import { FaFileLines, FaLinkedin, FaGithub, FaGoogleScholar, FaFlask } from 'react-icons/fa6';
 
 function Home() {
