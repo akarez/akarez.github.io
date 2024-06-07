@@ -39,7 +39,7 @@ function Projects() {
                             <img 
                                 src={isDesktopOrLaptop ? project.imageSide : project.image} 
                                 alt={project.title} 
-                                className='max-w-sm max-h-sm md:max-w-xs md:max-h-xs object-contain rounded-md' 
+                                className='max-w-xs max-h-xs md:max-w-xs md:max-h-xs object-contain rounded-md' 
                             />
                         </div>
                         <div className={`w-full md:w-1/2 flex flex-col justify-center items-start pl-2 md:pl-2 mb-6 ${index % 2 === 0 ? 'md:items-end md:text-right' : ''}`}>
