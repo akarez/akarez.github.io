@@ -1,7 +1,8 @@
 import React from 'react';
-import PEPHS from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/research/GLSVLSI_2024_Modular_Security_Evaluation_Platform_for_PCLCS__Camera_Ready_.pdf';
-import PEP from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/research/IFIP_2023_Research_Demo__PCLC_Emulation_Platform__Camera_Ready_.pdf';
-import FAMID from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/research/IFIP_2023__False_Alarms_Mitigation_in_IoMT_Devices__Camera_Ready_.pdf';
+
+const PEPHS = 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/research/GLSVLSI_2024_Modular_Security_Evaluation_Platform_for_PCLCS__Camera_Ready_.pdf';
+const PEP = 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/research/IFIP_2023_Research_Demo__PCLC_Emulation_Platform__Camera_Ready_.pdf';
+const FAMID = 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/research/IFIP_2023__False_Alarms_Mitigation_in_IoMT_Devices__Camera_Ready_.pdf';
 
 function Research() {
     return (

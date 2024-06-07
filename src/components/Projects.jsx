@@ -1,9 +1,5 @@
 import React from 'react';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
-import Cyclone from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/cyclone.png';
-import Bumblebee from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/bumblebee.png';
-import CycloneSide from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/cyclone-side.png';
-import BumblebeeSide from 'https://github.com/akarez/akarez.github.io/tree/main/src/assets/projects/bumblebee-side.png';
 import { useMediaQuery } from 'react-responsive';
 
 const projects = [
@@ -12,8 +8,8 @@ const projects = [
         title: 'CYCLONE',
         description: `The CYCLONE is a temperature controlled brushless fan driver for small space cooling applications.
                       The fan speed is controlled via PWM with an STM32F030 microcontroller and MCP9808 I2C temperature sensor.`,
-        image: Cyclone,
-        imageSide: CycloneSide,
+        image: 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/projects/cyclone.png',
+        imageSide: 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/projects/cyclone-side.png',
         link: 'https://github.com/akarez/cyclone',
     },
     {
@@ -22,8 +18,8 @@ const projects = [
         description: `The bumblebee is a wireless mechanical keyboard designed as a drop-in replacement for the RAMA M6. 
                       It features an nRF52840 microcontroller, addressable RGB, battery charging circuit, and hot-swap switch sockets.
                       The keymap can be configured with ZMK.`,
-        image: Bumblebee,
-        imageSide: BumblebeeSide,
+        image: 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/projects/bumblebee.png',
+        imageSide: 'https://raw.githubusercontent.com/akarez/akarez.github.io/main/src/assets/projects/bumblebee-side.png',
         link: 'https://github.com/akarez/bumblebee',
     },
 ];
