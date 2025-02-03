@@ -56,6 +56,11 @@ function NavBar() {
             </Link>
           </li>
           <li className="ml-8">
+            <Link to="projects" smooth={true} duration={500} hashSpy={true} offset={-navBarHeight} className={`text-sm uppercase relative cursor-pointer ${isInHomeViewport ? 'text-gray-100' : 'text-black'}`}>
+              Blog
+            </Link>
+          </li>
+          <li className="ml-8">
             <a href="mailto:ahmed1@usf.edu" target="_blank" rel="noopener noreferrer" className={`text-sm uppercase relative cursor-pointer ${isInHomeViewport ? 'text-gray-100' : 'text-black'}`}>
               Contact
             </a>

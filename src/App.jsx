@@ -5,6 +5,7 @@ import Research from './components/Research'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import Blog from './components/Blog'
 
 function App() {
 
