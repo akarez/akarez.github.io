@@ -57,7 +57,7 @@ function Experience() {
                     href={job.details.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="md:text-lg inline-flex items-center text-black no-underline"
+                    className="md:text-lg text-medium  inline-flex items-center text-black no-underline"
                   >
                     {job.details.company}
                     <FaArrowRightToBracket 

@@ -4,7 +4,7 @@ import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-function PCBViewer({objPath, mtlPath, pos_x, pos_y, pos_z}) {
+function PCBViewer({objPath, mtlPath, pos_x, pos_y, pos_z, zoom}) {
     const containerRef = useRef(null);
 
     useEffect(() => {
@@ -54,44 +54,60 @@ function PCBViewer({objPath, mtlPath, pos_x, pos_y, pos_z}) {
         scene.add(ambientLight);
 
         const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-        directionalLight.position.set(0, 10, 7.5);
+        directionalLight.position.set(0, 8, 7.5);
         directionalLight.castShadow = false;
         directionalLight.shadow.mapSize.width = 512;
         directionalLight.shadow.mapSize.height = 512;
         scene.add(directionalLight);
 
-        // Load Materials and OBJ
-        const mtlLoader = new MTLLoader();
-        mtlLoader.load(
-            mtlPath,
-            (materials) => {
-                materials.preload();
-                const objLoader = new OBJLoader();
-                objLoader.setMaterials(materials);
-                objLoader.load(
-                    objPath,
-                    (object) => {
-                        object.traverse((child) => {
-                            if (child.isMesh) {
-                                child.material.side = THREE.DoubleSide;
-                                child.castShadow = true;
-                                child.receiveShadow = true;
-                            }
-                        });
-                        // object.scale.set(0.9, 0.9, 0.9);
-                        // object.scale.set(1,1,1);
-                        object.scale.set(1.1,1.1,1.1);
-                        object.position.set(0, 0, 0);
-                        scene.add(object);
-                        renderer.render(scene, camera); // Initial render
-                    },
-                    undefined, // Progress
-                    (error) => console.error('Error loading OBJ:', error)
-                );
-            },
-            undefined, // Progress
-            (error) => console.error('Error loading MTL:', error)
-        );
+// Load Materials and OBJ
+const mtlLoader = new MTLLoader();
+mtlLoader.load(
+  mtlPath,
+  (materials) => {
+    materials.preload();
+    const objLoader = new OBJLoader();
+    objLoader.setMaterials(materials);
+    objLoader.load(
+      objPath,
+      (object) => {
+        // Traverse the loaded object to adjust materials
+        object.traverse((child) => {
+          if (child.isMesh) {
+            // Check if the material is an array or single material
+            const materialsArr = Array.isArray(child.material)
+              ? child.material
+              : [child.material];
+
+            materialsArr.forEach((mat) => {
+              // Detect copper material by name and apply polygon offset
+              if (mat.name && mat.name.toLowerCase().includes('copper')) {
+                mat.polygonOffset = true;
+                mat.polygonOffsetFactor = 1;  // tweak these values as needed
+                mat.polygonOffsetUnits = 1;
+              }
+              // Optionally keep double-sided rendering for the soldermask
+              mat.side = THREE.DoubleSide;
+            });
+
+            child.castShadow = true;
+            child.receiveShadow = true;
+          }
+        });
+        // Scale the object and add to the scene
+        object.scale.set(zoom, zoom, zoom);
+        object.position.set(0, 0, 0);
+        scene.add(object);
+        renderer.render(scene, camera); // Initial render
+      },
+      undefined, // onProgress callback
+      (error) => console.error('Error loading OBJ:', error)
+    );
+  },
+  undefined, // onProgress callback
+  (error) => console.error('Error loading MTL:', error)
+);
+
 
         // Add Orbit Controls
         const controls = new OrbitControls(camera, renderer.domElement);
