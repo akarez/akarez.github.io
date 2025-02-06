@@ -40,6 +40,11 @@ function NavBar() {
           </button>
         </div>
         <ul className="hidden md:flex relative z-40">
+        <li className="ml-8">
+            <Link to="about" smooth={true} duration={500} hashSpy={true} offset={-navBarHeight} className={`text-sm uppercase relative cursor-pointer ${isInHomeViewport ? 'text-gray-100' : 'text-black'}`}>
+              About
+            </Link>
+          </li>
           <li className="ml-8">
             <Link to="research" smooth={true} duration={500} hashSpy={true} offset={-navBarHeight} className={`text-sm uppercase relative cursor-pointer ${isInHomeViewport ? 'text-gray-100' : 'text-black'}`}>
               Research
@@ -55,11 +60,11 @@ function NavBar() {
               Projects
             </Link>
           </li>
-          <li className="ml-8">
+          {/* <li className="ml-8">
             <Link to="projects" smooth={true} duration={500} hashSpy={true} offset={-navBarHeight} className={`text-sm uppercase relative cursor-pointer ${isInHomeViewport ? 'text-gray-100' : 'text-black'}`}>
               Blog
             </Link>
-          </li>
+          </li> */}
           <li className="ml-8">
             <a href="mailto:ahmed1@usf.edu" target="_blank" rel="noopener noreferrer" className={`text-sm uppercase relative cursor-pointer ${isInHomeViewport ? 'text-gray-100' : 'text-black'}`}>
               Contact
@@ -73,6 +78,11 @@ function NavBar() {
           <RiCloseLine />
         </button>
         <ul className="flex flex-col items-start mt-12">
+        <li className="mb-12">
+            <Link to="about" smooth={true} duration={500} hashSpy={true} offset={-navBarHeight} className="uppercase text-2xl" onClick={toggleMobileMenu}>
+              About
+            </Link>
+          </li>
           <li className="mb-12">
             <Link to="research" smooth={true} duration={500} hashSpy={true} offset={-navBarHeight} className="uppercase text-2xl" onClick={toggleMobileMenu}>
               Research

@@ -54,7 +54,7 @@ function PCBViewer({objPath, mtlPath, pos_x, pos_y, pos_z, zoom}) {
         scene.add(ambientLight);
 
         const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-        directionalLight.position.set(0, 8, 7.5);
+        directionalLight.position.set(8, 8, 8);
         directionalLight.castShadow = false;
         directionalLight.shadow.mapSize.width = 512;
         directionalLight.shadow.mapSize.height = 512;
