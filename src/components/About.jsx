@@ -9,17 +9,15 @@ function About() {
                 </h1>
                 <div className="flex flex-col md:w-3/4">
                     <p className='mb-6 text-black md:text-base text-sm'>
-                        I am a computer engineer with expertise in embedded systems design, including PCB and FPGA design, bare-metal and RTOS firmware development, 
-                        and machine learning for resource-constrained devices. I strive for intentional, functional, and efficient designs.
-                    </p>
-                    <p className='mb-6 text-black md:text-base text-sm'>
-                        I earned a B.S. degree in Computer Engineering from the University of South Florida in 2023, and continued to pursue a Ph.D. in 
-                        Computer Science and Engineering at the same institution. I am part of the USF Interface Research Lab with Dr. Robert Karam as my advisor. 
-                        My research interests are in the area of Internet of Things, with a focus on design and security of medical IoT. 
+                        I am a Ph.D. student in the Department of Computer Science and Engineering at the University of South Florida. 
+                        My research interests are in the realm of resource constrained devices, such as edge AI, alternative computing, and smart health.
+                        I have experience in embedded systems design, including PCB and FPGA design, bare-metal and RTOS firmware development, 
+                        and machine learning for edge devices.
                     </p>
                     <p className='text-black md:text-base text-sm'>
-                        I am an active member of the IEEE, IEEE Eta Kappa Nu, and IEEE Computer Society student chapters at USF. 
-                        In the past I have served as Vice President of IEEE-CS and Technical Events Chair of IEEE. 
+                        I am an active member of IEEE, IEEE Eta Kappa Nu, and the IEEE Computer Society. 
+                        In the past I have served as Vice President of the IEEE-CS and Technical Events Chair 
+                        of the IEEE student chapters at USF.
                     </p>
                 </div>
             </div>
