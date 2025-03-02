@@ -51,7 +51,7 @@ function Projects() {
                         <div 
                             className={
                                 'w-full md:w-2/3 flex items-center ' +
-                                'h-[500px] md:h-[600px]'
+                                'h-[400px] md:h-[600px]'
                             }
                         >
                             <PCBViewer
@@ -65,17 +65,17 @@ function Projects() {
                         </div>
 
                         <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:mb-32">
-                            <h2 className="font-medium mb-2 md:text-base text-sm uppercase">
+                            <h2 className="font-medium mb-2 md:text-base uppercase">
                                 {project.title}
                             </h2>
-                            <p className="md:text-base text-sm mb-4">
+                            <p className="mb-4">
                                 {project.description}
                             </p>
                             <a
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-600 md:text-base text-sm inline-flex items-center"
+                                className="text-gray-600 inline-flex items-center"
                             >
                                 View on GitHub
                                 <FaArrowRightToBracket size={14} className="ml-1" />

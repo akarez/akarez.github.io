@@ -14,13 +14,13 @@ function Research() {
                 <div className="flex flex-col md:w-3/4">
                     <div className="mb-10">
                         <h2 className="font-medium md:text-lg">Machine Learning on the Edge: Challenges and Techniques for On-Device Learning</h2>
-                        <p className="md:text-base text-sm text-gray-600 mb-2">Samir Ahmed, Robert Karam</p>
-                        <p className="md:text-base text-sm">IBM IEEE CAS/EDS – AI Compute Symposium (Poster Session), 2024</p>
+                        <p className="text-base text-gray-600 mb-2">Samir Ahmed, Robert Karam</p>
+                        <p className="text-base">IBM IEEE CAS/EDS – AI Compute Symposium (Poster Session), 2024</p>
                     </div>
                     <div className="mb-10">
                         <h2 className="font-medium md:text-lg">Modular Security Evaluation Platform for Physiological Closed-Loop Control Systems</h2>
-                        <p className="md:text-base text-sm text-gray-600 mb-2">Samir Ahmed, Shakil Mahmud, Robert Karam</p>
-                        <p className="md:text-base text-sm">In Proceedings of the Great Lakes Symposium on VLSI, 2024</p>
+                        <p className="text-base text-gray-600 mb-2">Samir Ahmed, Shakil Mahmud, Robert Karam</p>
+                        <p className="text-base">In Proceedings of the Great Lakes Symposium on VLSI, 2024</p>
                         <div className="flex mt-1 space-x-4">
                             <a href={PEPHS} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-black text-white py-0.5 px-2 rounded text-xs">
@@ -36,8 +36,8 @@ function Research() {
                     </div>
                     <div className="mb-10">
                         <h2 className="font-medium md:text-lg">PEP: Hardware Emulation Platform for Physiological Closed-Loop Control Systems</h2>
-                        <p className="md:text-base text-sm text-gray-600 mb-2">Shakil Mahmud, Samir Ahmed, Robert Karam</p>
-                        <p className="md:text-base text-sm">IFIP International Internet of Things (IoT) Conference, 2023</p>
+                        <p className="text-base text-gray-600 mb-2">Shakil Mahmud, Samir Ahmed, Robert Karam</p>
+                        <p className="text-base">IFIP International Internet of Things (IoT) Conference, 2023</p>
                         <div className="flex mt-1 space-x-4">
                             <a href={PEP} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-black text-white py-0.5 px-2 rounded text-xs">
@@ -53,8 +53,8 @@ function Research() {
                     </div>
                     <div className="mb-10">
                         <h2 className="font-medium md:text-lg">FAMID: False Alarms Mitigation in IoMT Devices</h2>
-                        <p className="md:text-base text-sm text-gray-600 mb-2">Shakil Mahmud, Myles Keller, Samir Ahmed, Robert Karam</p>
-                        <p className="md:text-base text-sm">IFIP International Internet of Things (IoT) Conference, 2023</p>
+                        <p className="text-base text-gray-600 mb-2">Shakil Mahmud, Myles Keller, Samir Ahmed, Robert Karam</p>
+                        <p className="text-base">IFIP International Internet of Things (IoT) Conference, 2023</p>
                         <div className="flex mt-1 space-x-4">
                             <a href={FAMID} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-black text-white py-0.5 px-2 rounded text-xs">

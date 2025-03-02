@@ -22,7 +22,7 @@ function Footer() {
                 </a>
 
             </div>
-            <div className='text-gray-100 text-center mt-4 md:text-base text-sm'>
+            <div className='text-gray-100 text-center mt-4'>
                 © {new Date().getFullYear()} Samir Ahmed. All Rights Reserved.
             </div>
         </footer>

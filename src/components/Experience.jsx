@@ -8,8 +8,8 @@ const experience = [
       title: "Research Assistant",
       company: "Interface Research Lab",
       link: "https://cse.usf.edu/~rkaram/",
-      description: `Worked on BCI signal processing, hardware emulation for PCLCS, and hardware design and development 
-            for an educational hardware security platform. Currently working on R&D for wearable devices.`,
+      description: `Developed a hardware emulation platform with on-device ML for physiological closed-loop control systems. Designed and integrated 
+      wearable device hardware and firmware for healthcare applications.`,
     },
   },
   {
@@ -18,7 +18,7 @@ const experience = [
       title: "IoT Engineer",
       company: "Software Logistics",
       link: "https://www.software-logistics.com/",
-      description: `Optimized the NuvIoT firmware libraries implementing memory-efficient code and power-saving algorithms.
+      description: `Optimized the NuvIoT firmware libraries implementing memory-efficient and power-saving algorithms.
             Wrote system-level documentation of NuvIoT Cloud and Device integration, including device provisioning and message encoding/routing.`,
     },
   },
@@ -46,7 +46,7 @@ function Experience() {
         <div className="relative md:w-3/4 overflow-visible">
 
           {experience.map((job, index) => (
-            <div key={index} className="relative mb-10">
+            <div key={index} className="relative mb-12">
               {/* Date above Title */}
               <p className="md:text-base text-sm text-gray-600 mb-2">{job.period}</p>
 
@@ -68,7 +68,7 @@ function Experience() {
                 </h2>
               </div>
 
-              <p className="md:text-base text-sm">{job.details.description}</p>
+              <p className="text-base">{job.details.description}</p>
             </div>
           ))}
         </div>
